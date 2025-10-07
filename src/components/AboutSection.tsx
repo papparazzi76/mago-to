@@ -71,14 +71,14 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="card-magic p-6 text-center group hover:shadow-glow transition-all duration-300">
                   <Users className="w-8 h-8 text-primary mx-auto mb-3 group-hover:animate-bounce" />
-                  <div className="text-2xl font-bold text-secondary">500+</div>
+                  <div className="text-2xl font-bold text-secondary">1000+</div>
                   <div className="text-sm text-muted-foreground">Eventos Realizados</div>
                 </Card>
                 
                 <Card className="card-magic p-6 text-center group hover:shadow-glow transition-all duration-300">
-                  <Heart className="w-8 h-8 text-red-500 mx-auto mb-3 group-hover:animate-bounce" />
-                  <div className="text-2xl font-bold text-secondary">100%</div>
-                  <div className="text-sm text-muted-foreground">Sonrisas Garantizadas</div>
+                  <Award className="w-8 h-8 text-secondary mx-auto mb-3 group-hover:animate-bounce" />
+                  <div className="text-2xl font-bold text-secondary">+25</div>
+                  <div className="text-sm text-muted-foreground">Años de Experiencia</div>
                 </Card>
               </div>
 

@@ -146,11 +146,11 @@ const HeroSection = () => {
               <p className="text-sm text-muted-foreground mb-4">Confianza de cientos de familias y empresas</p>
               <div className="flex items-center gap-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">500+</div>
+                  <div className="text-2xl font-bold text-secondary">1000+</div>
                   <div className="text-xs text-muted-foreground">Eventos</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">15+</div>
+                  <div className="text-2xl font-bold text-secondary">+25</div>
                   <div className="text-xs text-muted-foreground">Años</div>
                 </div>
                 <div className="text-center">
