@@ -47,10 +47,10 @@ const ShowsSection = () => {
       color: "text-yellow-500"
     },
     {
-      title: "Comuniones y Bodas",
-      description: "Momentos especiales que requieren entretenimiento elegante. Magia que complementa perfectamente estas celebraciones.",
+      title: "Festejos Populares",
+      description: "Espectáculos para fiestas patronales y eventos populares, donde la magia se convierte en el centro de atención de todo el pueblo.",
       icon: GraduationCap,
-      features: ["Elegancia y clase", "Entretenimiento entre platos", "Adaptable al protocolo", "Momentos únicos"],
+      features: ["Aire libre o interior", "Todos los públicos", "Gran convocatoria", "Ambiente festivo"],
       duration: "~60 min",
       audience: "Variable",
       color: "text-purple-500"
