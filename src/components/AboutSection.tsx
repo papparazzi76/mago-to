@@ -114,7 +114,7 @@ const AboutSection = () => {
                   className="group"
                 >
                   <Award className="w-5 h-5 group-hover:animate-bounce" />
-                  Contrata mi Espectáculo
+                  Contrataciones
                 </MagicButton>
               </div>
             </div>
