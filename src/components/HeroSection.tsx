@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { MagicButton } from "./ui/magic-button"
 import { Sparkles, Star, Heart, Diamond, Club } from "lucide-react"
-import heroMagician from "@/assets/hero-magician.jpg"
+import tonoHero from "@/assets/tono-hero.webp"
 
 const HeroSection = () => {
   const [currentCard, setCurrentCard] = useState(0)
@@ -33,9 +33,9 @@ const HeroSection = () => {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroMagician}
+          src={tonoHero}
           alt="El Mago Toño performing magic"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain object-right"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent"></div>
       </div>
