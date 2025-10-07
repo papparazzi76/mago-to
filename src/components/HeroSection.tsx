@@ -108,6 +108,10 @@ const HeroSection = () => {
                 <span className="text-sm font-medium">Magia de Cerca</span>
               </div>
               <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
+                <Diamond className="w-5 h-5 text-blue-500" />
+                <span className="text-sm font-medium">Magia de Salón</span>
+              </div>
+              <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
                 <Heart className="w-5 h-5 text-red-500" />
                 <span className="text-sm font-medium">Todos los Públicos</span>
               </div>
