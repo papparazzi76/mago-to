@@ -24,7 +24,7 @@ const AboutSection = () => {
               <span className="text-foreground">Tu Mago Favorito</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Más de 15 años creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
+              Más de 25 años creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
               que combina técnica, humor y cercanía para hacer de cada evento una experiencia memorable.
             </p>
           </div>
