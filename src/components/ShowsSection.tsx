@@ -24,7 +24,7 @@ const ShowsSection = () => {
       description: "Espectáculos perfectos para reuniones familiares, donde abuelos, padres y niños disfrutan juntos de momentos mágicos únicos.",
       icon: Heart,
       features: ["Todas las edades", "Humor familiar", "Participación grupal", "Recuerdos inolvidables"],
-      duration: "45-60 min",
+      duration: "~60 min",
       audience: "8-50 personas",
       color: "text-red-500"
     },
@@ -33,7 +33,7 @@ const ShowsSection = () => {
       description: "Dinámicas de team building y entretenimiento corporativo que rompen el hielo y crean vínculos entre equipos.",
       icon: Building,
       features: ["Team building", "Networking", "Ambiente distendido", "Profesional"],
-      duration: "30-90 min",
+      duration: "~60 min",
       audience: "20-200 personas",
       color: "text-blue-500"
     },
@@ -42,7 +42,7 @@ const ShowsSection = () => {
       description: "Celebraciones mágicas que convierten cualquier cumpleaños en una fiesta única, adaptándome a la edad del protagonista.",
       icon: Gift,
       features: ["Cumpleañero protagonista", "Sorpresas personalizadas", "Diversión asegurada", "Fotos memorables"],
-      duration: "45 min",
+      duration: "~60 min",
       audience: "10-40 personas",
       color: "text-yellow-500"
     },
@@ -51,7 +51,7 @@ const ShowsSection = () => {
       description: "Momentos especiales que requieren entretenimiento elegante. Magia que complementa perfectamente estas celebraciones.",
       icon: GraduationCap,
       features: ["Elegancia y clase", "Entretenimiento entre platos", "Adaptable al protocolo", "Momentos únicos"],
-      duration: "30-60 min",
+      duration: "~60 min",
       audience: "Variable",
       color: "text-purple-500"
     },
@@ -60,7 +60,7 @@ const ShowsSection = () => {
       description: "Espectáculos diseñados especialmente para los más pequeños, con magia adaptada, humor infantil y mucha participación.",
       icon: Baby,
       features: ["Lenguaje infantil", "Trucos visuales", "Participación activa", "Aprendizaje divertido"],
-      duration: "30-45 min",
+      duration: "~60 min",
       audience: "15-30 niños",
       color: "text-green-500"
     },
@@ -69,7 +69,7 @@ const ShowsSection = () => {
       description: "La experiencia completa de magia de cerca con múltiples rutinas, humor sofisticado y momentos absolutamente asombrosos.",
       icon: Star,
       features: ["Repertorio completo", "Múltiples rutinas", "Interacción premium", "Experiencia VIP"],
-      duration: "60-90 min",
+      duration: "~60 min",
       audience: "Variable",
       color: "text-primary"
     }
