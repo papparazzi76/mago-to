@@ -19,12 +19,12 @@ const AboutSection = () => {
               <span className="text-secondary font-medium">Conoce al Artista</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-magic">"El Mago Toño"</span>
+              <span className="text-magic">Antonio "Toño"</span>
               <br />
-              <span className="text-foreground">Tu Mago Favorito</span>
+              <span className="text-foreground">Tu Mago de Confianza</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Más de 15 años creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
+              Más de 15 años creando momentos mágicos únicos. Especialista en magia de cerca 
               que combina técnica, humor y cercanía para hacer de cada evento una experiencia memorable.
             </p>
           </div>
