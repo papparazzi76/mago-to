@@ -89,14 +89,14 @@ const HeroSection = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-primary">El Mago Toño</span>
               <br />
-              <span className="text-foreground">Magia que</span>
+              <span className="text-foreground">Magia y</span>
               <br />
-              <span className="text-primary">Enamora</span>
+              <span className="text-primary">Humor</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              Espectáculos de <span className="text-primary font-semibold">magia de cerca</span> y 
+              Espectáculos de <span className="text-primary font-semibold">magia de escena</span> y 
               humor que harán de tu evento una experiencia <span className="text-magic">inolvidable</span>. 
               Desde Valladolid para toda España.
             </p>
@@ -109,7 +109,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
                 <Diamond className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-medium">Magia de Salón</span>
+                <span className="text-sm font-medium">Magia de Escena</span>
               </div>
               <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
                 <Heart className="w-5 h-5 text-red-500" />
