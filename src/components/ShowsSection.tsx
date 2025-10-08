@@ -86,9 +86,9 @@ const ShowsSection = () => {
               <span className="text-secondary font-medium">Tipos de Espectáculos</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-magic">Magia Adaptada</span>
+              <span className="text-magic">Espectáculos de Magia</span>
               <br />
-              <span className="text-foreground">a Cada Ocasión</span>
+              <span className="text-foreground">para Cada Ocasión en Valladolid</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Cada evento es único y merece un espectáculo personalizado. 
@@ -154,12 +154,10 @@ const ShowsSection = () => {
           <div className="bg-gradient-to-r from-card to-muted/50 rounded-2xl p-8 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <MapPin className="w-5 h-5 text-primary" />
-              <span className="text-lg font-semibold text-foreground">Área de Cobertura</span>
+              <h3 className="text-lg font-semibold text-foreground">Área de Cobertura</h3>
             </div>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Basado en <span className="text-primary font-semibold">Valladolid</span>, me desplazo 
-              por toda <span className="text-secondary font-semibold">Castilla y León</span> y otras provincias. 
-              ¡Consulta disponibilidad para tu ubicación!
+              Actúo principalmente en <span className="text-primary font-semibold">Valladolid</span> y pueblos de la provincia como <span className="text-secondary font-semibold">Laguna de Duero, Arroyo de la Encomienda o Medina del Campo</span>. También me desplazo por toda <span className="text-secondary font-semibold">Castilla y León</span> (Palencia, Salamanca, Segovia...). ¡Consulta disponibilidad para tu ubicación!
             </p>
             <MagicButton 
               variant="theatrical" 
