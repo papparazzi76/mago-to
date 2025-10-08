@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img 
           src={tonoHero}
-          alt="El Mago Toño performing magic"
+          alt="El Mago Toño, mago y humorista en Valladolid, listo para su espectáculo."
           className="w-full h-full object-contain object-left"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-white/90 via-white/60 to-transparent"></div>
