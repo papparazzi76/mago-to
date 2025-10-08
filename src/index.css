@@ -6,81 +6,75 @@
 
 @layer base {
   :root {
-    /* Colores base inspirados en la magia */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    /* Fondo blanco limpio, textos negros, acentos rojos */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    /* Tonos mágicos principales */
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Rojo teatral principal */
-    --primary: 0 85% 50%;
+    /* Rojo puro para títulos y botones */
+    --primary: 0 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 0 85% 60%;
+    --primary-glow: 0 100% 60%;
 
-    /* Dorado elegante */
-    --secondary: 45 85% 55%;
-    --secondary-foreground: 0 0% 10%;
+    /* Negro para elementos secundarios */
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Tonos sutiles */
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    /* Tonos sutiles grises */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Acento mágico */
-    --accent: 280 100% 70%;
+    /* Acento rojo */
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Bordes y inputs */
-    --border: 0 0% 20%;
-    --input: 0 0% 18%;
-    --ring: 0 85% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 100% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-
-    /* Gradientes mágicos */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-magic: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-stage: linear-gradient(180deg, hsl(0 0% 2%), hsl(0 0% 8%));
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 100% 50%;
     
-    /* Sombras teatrales */
-    --shadow-magic: 0 25px 50px -12px hsl(var(--primary) / 0.25);
-    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.6);
+    /* Sombras limpias */
+    --shadow-magic: 0 4px 12px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 4px 20px hsl(0 100% 50% / 0.2);
+    --shadow-card: 0 2px 8px hsl(0 0% 0% / 0.08);
     
     /* Animaciones suaves */
-    --transition-magic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.3s ease-out;
+    --transition-magic: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease;
   }
 
   .dark {
-    /* Ya está optimizado para tema oscuro por defecto */
-    --background: 0 0% 6%;
-    --foreground: 0 0% 96%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    /* Mantener tema claro siempre */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 0 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 100% 50%;
   }
 }
 
@@ -99,18 +93,10 @@
   }
 }
 
-/* Utilidades mágicas customizadas */
+/* Utilidades customizadas */
 @layer utilities {
-  .magic-gradient {
-    background: var(--gradient-magic);
-  }
-  
-  .stage-gradient {
-    background: var(--gradient-stage);
-  }
-  
   .text-magic {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply text-primary;
   }
   
   .shadow-magic {
@@ -126,6 +112,6 @@
   }
   
   .card-magic {
-    @apply bg-card border border-border/20 shadow-card backdrop-blur-sm;
+    @apply bg-card border border-border shadow-card;
   }
 }

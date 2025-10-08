@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { MagicButton } from "./ui/magic-button"
+import { PokerButton } from "./ui/poker-button"
 import { Sparkles, Star, Heart, Diamond, Club } from "lucide-react"
 import tonoHero from "@/assets/tono-hero.webp"
 
@@ -30,14 +30,14 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
+      {/* Background with overlay */}
       <div className="absolute inset-0">
         <img 
           src={tonoHero}
           alt="El Mago Toño performing magic"
           className="w-full h-full object-contain object-right"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent"></div>
       </div>
 
       {/* Floating cards decoration */}
@@ -87,11 +87,11 @@ const HeroSection = () => {
 
             {/* Main headline */}
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-magic">El Mago Toño</span>
+              <span className="text-primary">El Mago Toño</span>
               <br />
               <span className="text-foreground">Magia que</span>
               <br />
-              <span className="text-secondary">Enamora</span>
+              <span className="text-primary">Enamora</span>
             </h1>
 
             {/* Subtitle */}
@@ -123,22 +123,22 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <MagicButton 
-                variant="theatrical" 
+              <PokerButton 
+                suit="heart" 
                 size="xl"
                 onClick={scrollToContact}
                 className="group"
               >
-                <Sparkles className="w-5 h-5 group-hover:animate-sparkle" />
+                <Sparkles className="w-5 h-5" />
                 Contratar Espectáculo
-              </MagicButton>
-              <MagicButton 
-                variant="outline" 
+              </PokerButton>
+              <PokerButton 
+                suit="spade" 
                 size="xl"
                 onClick={scrollToShows}
               >
                 Ver Espectáculos
-              </MagicButton>
+              </PokerButton>
             </div>
 
             {/* Social proof */}
