@@ -21,7 +21,7 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="text-magic">"El Mago Toño"</span>
               <br />
-              <span className="text-foreground">Tu Mago Favorito</span>
+              <span className="text-foreground">Tu Mago Favorito en Valladolid</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Más de 25 años creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
@@ -35,7 +35,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <img 
                 src={closeUpMagic}
-                alt="Toño realizando magia de cerca"
+                alt="El Mago Toño realizando un truco de magia de cerca con cartas en un evento en Valladolid"
                 className="relative z-10 w-full h-[500px] object-cover rounded-2xl shadow-magic transition-transform duration-500 group-hover:scale-[1.02]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
