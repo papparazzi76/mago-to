@@ -30,8 +30,8 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
-      <div className="absolute inset-0">
+      {/* Background with overlay - Only visible on desktop */}
+      <div className="absolute inset-0 hidden lg:block">
         <img 
           src={tonoHero}
           alt="El Mago Toño, mago y humorista en Valladolid, listo para su espectáculo."
@@ -62,8 +62,17 @@ const HeroSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-4 flex justify-end">
-        <div className="max-w-4xl">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col lg:flex-row lg:justify-end items-center gap-8">
+        {/* Image for mobile and tablet - positioned above content */}
+        <div className="w-full lg:hidden flex justify-center">
+          <img 
+            src={tonoHero}
+            alt="El Mago Toño, mago y humorista en Valladolid, listo para su espectáculo."
+            className="max-w-md w-full h-auto object-contain"
+          />
+        </div>
+        
+        <div className="max-w-4xl w-full">
           <div className="animate-fade-in">
             {/* Magic greeting */}
             <div className="flex items-center gap-3 mb-6">
