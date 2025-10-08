@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { PokerButton } from "./ui/poker-button"
 import { Sparkles, Star, Heart, Diamond, Club } from "lucide-react"
-import tonoHero from "@/assets/tono-hero.webp"
+import tonoHero from "@/assets/tono-hero-new.webp"
 
 const HeroSection = () => {
   const [currentCard, setCurrentCard] = useState(0)
@@ -35,9 +35,9 @@ const HeroSection = () => {
         <img 
           src={tonoHero}
           alt="El Mago Toño performing magic"
-          className="w-full h-full object-contain object-right"
+          className="w-full h-full object-contain object-left"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-white/90 via-white/60 to-transparent"></div>
       </div>
 
       {/* Floating cards decoration */}
@@ -62,7 +62,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 container mx-auto px-4 flex justify-end">
         <div className="max-w-4xl">
           <div className="animate-fade-in">
             {/* Magic greeting */}
