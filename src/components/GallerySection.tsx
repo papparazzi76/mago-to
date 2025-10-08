@@ -20,37 +20,37 @@ const GallerySection = () => {
     {
       id: 1,
       src: magicCards,
-      alt: "Magia con cartas flotantes",
+      alt: "Espectáculo de magia con cartas flotantes y partículas doradas.",
       category: "Magia de Cerca"
     },
     {
       id: 2,
       src: "https://images.unsplash.com/photo-1520637836862-4d197d17c818?w=500",
-      alt: "Evento corporativo",
+      alt: "El Mago Toño actuando en un evento corporativo en Valladolid.",
       category: "Corporativo"
     },
     {
       id: 3,
       src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500",
-      alt: "Cumpleaños infantil",
+      alt: "Niños disfrutando de un show de magia infantil en un cumpleaños.",
       category: "Infantil"
     },
     {
       id: 4,
       src: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=500",
-      alt: "Boda elegante",
+      alt: "Actuación de magia y humor en una boda elegante.",
       category: "Bodas"
     },
     {
       id: 5,
       src: "https://images.unsplash.com/photo-1511376777868-611b54f68947?w=500",
-      alt: "Reunión familiar",
+      alt: "Magia para una reunión familiar llena de sonrisas.",
       category: "Familiar"
     },
     {
       id: 6,
       src: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500",
-      alt: "Espectáculo de cartas",
+      alt: "Primer plano de un truco de cartas durante un espectáculo de magia de cerca.",
       category: "Magia de Cerca"
     }
   ]
