@@ -249,7 +249,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Email</div>
-                      <div className="font-medium text-foreground">contacto@elmagotono.com</div>
+                      <div className="font-medium text-foreground">elmagotono@yahoo.es</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
