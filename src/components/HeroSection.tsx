@@ -72,100 +72,118 @@ const HeroSection = () => {
           />
         </div>
         
-        <div className="max-w-4xl w-full">
-          <div className="animate-fade-in">
-            {/* Magic greeting */}
-            <div className="flex items-center gap-3 mb-6">
-              <div className="flex items-center gap-1">
-                {cardIcons.map((item, index) => {
-                  const IconComponent = item.icon
-                  return (
-                    <IconComponent
-                      key={index}
-                      className={`w-8 h-8 transition-all duration-500 ${
-                        index === currentCard 
-                          ? `${item.color} scale-125 animate-sparkle` 
-                          : "text-muted-foreground scale-100"
-                      }`}
-                    />
-                  )
-                })}
-              </div>
-              <span className="text-lg text-secondary font-medium">¡Prepárate para la magia!</span>
-            </div>
-
-            {/* Main headline */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-primary">El Mago Toño</span>
-              <br />
-              <span className="text-foreground">Magia y</span>
-              <br />
-              <span className="text-primary">Humor</span>
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-              Espectáculos de <span className="text-primary font-semibold">magia de escena</span> y 
-              humor que harán de tu evento una experiencia <span className="text-magic">inolvidable</span>. 
-              Desde Valladolid para toda España.
-            </p>
-
-            {/* Key benefits */}
-            <div className="flex flex-wrap gap-4 mb-10">
-              <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
-                <Star className="w-5 h-5 text-secondary" />
-                <span className="text-sm font-medium">Magia de Cerca</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
-                <Diamond className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-medium">Magia de Escena</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
-                <Heart className="w-5 h-5 text-red-500" />
-                <span className="text-sm font-medium">Todos los Públicos</span>
-              </div>
-              <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
-                <Sparkles className="w-5 h-5 text-primary animate-sparkle" />
-                <span className="text-sm font-medium">Humor & Diversión</span>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <PokerButton 
-                suit="heart" 
-                size="xl"
-                onClick={scrollToContact}
-                className="group"
-              >
-                <Sparkles className="w-5 h-5" />
-                Contratar Espectáculo
-              </PokerButton>
-              <PokerButton 
-                suit="spade" 
-                size="xl"
-                onClick={scrollToShows}
-              >
-                Ver Espectáculos
-              </PokerButton>
-            </div>
-
-            {/* Social proof */}
-            <div className="mt-12 pt-8 border-t border-border/20">
-              <p className="text-sm text-muted-foreground mb-4">Confianza de cientos de familias y empresas</p>
-              <div className="flex items-center gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">1000+</div>
-                  <div className="text-xs text-muted-foreground">Eventos</div>
+        <div className="flex flex-col xl:flex-row gap-8 items-start w-full">
+          <div className="max-w-2xl w-full flex-shrink-0">
+            <div className="animate-fade-in">
+              {/* Magic greeting */}
+              <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-1">
+                  {cardIcons.map((item, index) => {
+                    const IconComponent = item.icon
+                    return (
+                      <IconComponent
+                        key={index}
+                        className={`w-8 h-8 transition-all duration-500 ${
+                          index === currentCard 
+                            ? `${item.color} scale-125 animate-sparkle` 
+                            : "text-muted-foreground scale-100"
+                        }`}
+                      />
+                    )
+                  })}
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">+25</div>
-                  <div className="text-xs text-muted-foreground">Años</div>
+                <span className="text-lg text-secondary font-medium">¡Prepárate para la magia!</span>
+              </div>
+
+              {/* Main headline */}
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span className="text-primary">El Mago Toño</span>
+                <br />
+                <span className="text-foreground">Magia y</span>
+                <br />
+                <span className="text-primary">Humor</span>
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+                Espectáculos de <span className="text-primary font-semibold">magia de escena</span> y 
+                humor que harán de tu evento una experiencia <span className="text-magic">inolvidable</span>. 
+                Desde Valladolid para toda España.
+              </p>
+
+              {/* Key benefits */}
+              <div className="flex flex-wrap gap-4 mb-10">
+                <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
+                  <Star className="w-5 h-5 text-secondary" />
+                  <span className="text-sm font-medium">Magia de Cerca</span>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">100%</div>
-                  <div className="text-xs text-muted-foreground">Diversión</div>
+                <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
+                  <Diamond className="w-5 h-5 text-blue-500" />
+                  <span className="text-sm font-medium">Magia de Escena</span>
                 </div>
+                <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
+                  <Heart className="w-5 h-5 text-red-500" />
+                  <span className="text-sm font-medium">Todos los Públicos</span>
+                </div>
+                <div className="flex items-center gap-2 bg-card/50 backdrop-blur-sm rounded-full px-4 py-2 border border-border/20">
+                  <Sparkles className="w-5 h-5 text-primary animate-sparkle" />
+                  <span className="text-sm font-medium">Humor & Diversión</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <PokerButton 
+                  suit="heart" 
+                  size="xl"
+                  onClick={scrollToContact}
+                  className="group"
+                >
+                  <Sparkles className="w-5 h-5" />
+                  Contratar Espectáculo
+                </PokerButton>
+                <PokerButton 
+                  suit="spade" 
+                  size="xl"
+                  onClick={scrollToShows}
+                >
+                  Ver Espectáculos
+                </PokerButton>
+              </div>
+
+              {/* Social proof */}
+              <div className="mt-12 pt-8 border-t border-border/20">
+                <p className="text-sm text-muted-foreground mb-4">Confianza de cientos de familias y empresas</p>
+                <div className="flex items-center gap-6">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-secondary">1000+</div>
+                    <div className="text-xs text-muted-foreground">Eventos</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-secondary">+25</div>
+                    <div className="text-xs text-muted-foreground">Años</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-secondary">100%</div>
+                    <div className="text-xs text-muted-foreground">Diversión</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* YouTube Video */}
+          <div className="w-full xl:max-w-sm flex-shrink-0">
+            <div className="rounded-xl overflow-hidden shadow-magic border border-border/20">
+              <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/QTg4c_tr8l0"
+                  title="Vídeo de presentación - El Mago Toño"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
