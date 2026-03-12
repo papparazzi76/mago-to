@@ -173,9 +173,9 @@ const HeroSection = () => {
           </div>
 
           {/* YouTube Video */}
-          <div className="w-full xl:max-w-sm flex-shrink-0">
+          <div className="w-full xl:max-w-md flex-shrink-0">
             <div className="rounded-xl overflow-hidden shadow-magic border border-border/20">
-              <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   className="absolute inset-0 w-full h-full"
                   src="https://www.youtube.com/embed/QTg4c_tr8l0"
