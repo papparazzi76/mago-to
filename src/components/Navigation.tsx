@@ -120,6 +120,12 @@ const Navigation = () => {
               >
                 Testimonios
               </button>
+              <button 
+                onClick={() => scrollToSection("downloads")}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Descargas
+              </button>
               <MagicButton 
                 variant="theatrical"
                 className="w-full mt-2"
