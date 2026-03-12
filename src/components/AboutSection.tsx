@@ -1,7 +1,7 @@
 import { Card } from "./ui/card"
 import { MagicButton } from "./ui/magic-button"
 import { Users, Heart, Award, Sparkles } from "lucide-react"
-import closeUpMagic from "@/assets/close-up-magic.jpg"
+import tonoButacas from "@/assets/tono-butacas.webp"
 
 const AboutSection = () => {
   const scrollToContact = () => {
