@@ -11,7 +11,12 @@ import {
   Star,
   Camera
 } from "lucide-react"
-import magicCards from "@/assets/magic-cards.jpg"
+import tonoTeatro from "@/assets/tono-teatro.webp"
+import tonoBw from "@/assets/tono-bw.webp"
+import tonoZorrilla from "@/assets/tono-zorrilla.webp"
+import tonoSentado from "@/assets/tono-sentado.webp"
+import tonoEscenario from "@/assets/tono-escenario.webp"
+import tonoRecortada from "@/assets/tono-recortada.webp"
 
 const GallerySection = () => {
   const [activeTab, setActiveTab] = useState("photos")
@@ -19,39 +24,39 @@ const GallerySection = () => {
   const photos = [
     {
       id: 1,
-      src: magicCards,
-      alt: "Espectáculo de magia con cartas flotantes y partículas doradas.",
-      category: "Magia de Cerca"
+      src: tonoTeatro,
+      alt: "El Mago Toño posando en el escenario del teatro.",
+      category: "Teatro"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1520637836862-4d197d17c818?w=500",
-      alt: "El Mago Toño actuando en un evento corporativo en Valladolid.",
-      category: "Corporativo"
+      src: tonoBw,
+      alt: "El Mago Toño durante una actuación en blanco y negro.",
+      category: "Espectáculo"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500",
-      alt: "Niños disfrutando de un show de magia infantil en un cumpleaños.",
-      category: "Infantil"
+      src: tonoZorrilla,
+      alt: "El Mago Toño actuando en el Teatro Zorrilla de Valladolid.",
+      category: "Magia de Escena"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=500",
-      alt: "Actuación de magia y humor en una boda elegante.",
-      category: "Bodas"
+      src: tonoSentado,
+      alt: "El Mago Toño en un momento de relax entre bastidores.",
+      category: "Backstage"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1511376777868-611b54f68947?w=500",
-      alt: "Magia para una reunión familiar llena de sonrisas.",
-      category: "Familiar"
+      src: tonoEscenario,
+      alt: "El Mago Toño en plena actuación ante el público.",
+      category: "En Directo"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=500",
-      alt: "Primer plano de un truco de cartas durante un espectáculo de magia de cerca.",
-      category: "Magia de Cerca"
+      src: tonoRecortada,
+      alt: "Retrato del Mago Toño, mago y humorista.",
+      category: "Retrato"
     }
   ]
 
