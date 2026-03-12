@@ -63,6 +63,12 @@ const Navigation = () => {
             >
               Testimonios
             </button>
+            <button 
+              onClick={() => scrollToSection("downloads")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Descargas
+            </button>
             <MagicButton 
               variant="theatrical"
               onClick={() => scrollToSection("contact")}
@@ -113,6 +119,12 @@ const Navigation = () => {
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
               >
                 Testimonios
+              </button>
+              <button 
+                onClick={() => scrollToSection("downloads")}
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Descargas
               </button>
               <MagicButton 
                 variant="theatrical"
