@@ -1,7 +1,7 @@
 import { Card } from "./ui/card"
 import { MagicButton } from "./ui/magic-button"
 import { Users, Heart, Award, Sparkles } from "lucide-react"
-import closeUpMagic from "@/assets/close-up-magic.jpg"
+import tonoButacas from "@/assets/tono-butacas.webp"
 
 const AboutSection = () => {
   const scrollToContact = () => {
@@ -34,7 +34,7 @@ const AboutSection = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <img 
-                src={closeUpMagic}
+                src={tonoButacas}
                 alt="El Mago Toño realizando un truco de magia de cerca con cartas en un evento en Valladolid"
                 className="relative z-10 w-full h-[500px] object-cover rounded-2xl shadow-magic transition-transform duration-500 group-hover:scale-[1.02]"
               />
