@@ -29,7 +29,7 @@ const HeroSection = () => {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with overlay - Only visible on desktop */}
       <div className="absolute inset-0 hidden lg:block">
         <img 
