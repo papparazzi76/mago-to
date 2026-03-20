@@ -63,13 +63,24 @@ const HeroSection = () => {
 
       {/* Main content */}
       <div className="relative z-10 container mx-auto px-4 flex flex-col lg:flex-row items-start gap-8">
-        {/* Image for mobile and tablet - positioned above content */}
-        <div className="w-full lg:hidden flex justify-center">
-          <img 
-            src={tonoHero}
-            alt="El Mago Toño, mago y humorista en Valladolid, listo para su espectáculo."
-            className="max-w-md w-full h-auto object-contain"
-          />
+        {/* Image for mobile and tablet - with overlaid title */}
+        <div className="w-full lg:hidden relative">
+          <div className="flex justify-center">
+            <img 
+              src={tonoHero}
+              alt="El Mago Toño, mago y humorista en Valladolid, listo para su espectáculo."
+              className="max-w-md w-full h-auto object-contain"
+            />
+          </div>
+          {/* Title overlay on mobile */}
+          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white via-white/90 to-transparent pt-16">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              <span className="text-primary">El Mago Toño</span>
+              <br />
+              <span className="text-foreground">Magia y </span>
+              <span className="text-primary">Humor</span>
+            </h1>
+          </div>
         </div>
 
         {/* Left spacer for the background image on desktop */}
@@ -115,8 +126,8 @@ const HeroSection = () => {
               <span className="text-lg text-secondary font-medium">¡Prepárate para la magia!</span>
             </div>
 
-            {/* Main headline */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            {/* Main headline - hidden on mobile (shown overlaid on image) */}
+            <h1 className="hidden lg:block text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-primary">El Mago Toño</span>
               <br />
               <span className="text-foreground">Magia y</span>
