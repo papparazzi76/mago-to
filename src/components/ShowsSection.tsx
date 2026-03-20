@@ -179,6 +179,22 @@ const ShowsSection = () => {
             </DialogContent>
           </Dialog>
 
+          <Dialog open={videoOpen3} onOpenChange={setVideoOpen3}>
+            <DialogContent className="max-w-4xl p-0 bg-black border-none overflow-hidden">
+              <div className="aspect-video w-full">
+                {videoOpen3 && (
+                  <iframe
+                    src="https://www.youtube.com/embed/kH9bD4c6yik?autoplay=1"
+                    title="Espectáculo El Mago Toño 3"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                )}
+              </div>
+            </DialogContent>
+          </Dialog>
+
           <Dialog open={videoOpen2} onOpenChange={setVideoOpen2}>
             <DialogContent className="max-w-4xl p-0 bg-black border-none overflow-hidden">
               <div className="aspect-video w-full">
