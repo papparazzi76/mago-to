@@ -18,6 +18,7 @@ import {
 const ShowsSection = () => {
   const [videoOpen, setVideoOpen] = useState(false)
   const [videoOpen2, setVideoOpen2] = useState(false)
+  const [videoOpen3, setVideoOpen3] = useState(false)
 
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
