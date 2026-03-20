@@ -16,6 +16,8 @@ import {
 } from "lucide-react"
 
 const ShowsSection = () => {
+  const [videoOpen, setVideoOpen] = useState(false)
+
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
   }
