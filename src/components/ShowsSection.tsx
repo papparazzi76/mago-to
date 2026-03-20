@@ -97,8 +97,8 @@ const ShowsSection = () => {
               <span className="text-foreground">para Cada Ocasión en Valladolid</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Cada evento es único y merece un espectáculo personalizado. 
-              Descubre cómo puedo hacer de tu celebración algo verdaderamente especial.
+              Cada evento en Valladolid es único y merece un espectáculo de magia personalizado. 
+              Descubre cómo puedo hacer de tu fiesta, boda, comunión o evento de empresa algo verdaderamente especial.
             </p>
           </div>
 
