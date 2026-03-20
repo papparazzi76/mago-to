@@ -101,8 +101,8 @@ const ShowsSection = () => {
             </p>
           </div>
 
-          {/* Video lightbox button */}
-          <div className="flex justify-center mb-12">
+          {/* Video lightbox buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
             <button
               onClick={() => setVideoOpen(true)}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
@@ -121,9 +121,28 @@ const ShowsSection = () => {
                 Ver vídeo del espectáculo
               </span>
             </button>
+
+            <button
+              onClick={() => setVideoOpen2(true)}
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
+            >
+              <img
+                src="https://img.youtube.com/vi/Q0Bq9j6x13E/hqdefault.jpg"
+                alt="Ver vídeo de espectáculo 2"
+                className="w-full max-w-md aspect-video object-cover"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <span className="absolute bottom-3 left-0 right-0 text-center text-white font-semibold text-sm drop-shadow-lg">
+                Ver vídeo de espectáculo
+              </span>
+            </button>
           </div>
 
-          {/* Video dialog */}
+          {/* Video dialogs */}
           <Dialog open={videoOpen} onOpenChange={setVideoOpen}>
             <DialogContent className="max-w-4xl p-0 bg-black border-none overflow-hidden">
               <div className="aspect-video w-full">
@@ -131,6 +150,22 @@ const ShowsSection = () => {
                   <iframe
                     src="https://www.youtube.com/embed/37r_FwzLIgY?autoplay=1"
                     title="Espectáculo El Mago Toño"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                )}
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog open={videoOpen2} onOpenChange={setVideoOpen2}>
+            <DialogContent className="max-w-4xl p-0 bg-black border-none overflow-hidden">
+              <div className="aspect-video w-full">
+                {videoOpen2 && (
+                  <iframe
+                    src="https://www.youtube.com/embed/Q0Bq9j6x13E?autoplay=1"
+                    title="Espectáculo El Mago Toño 2"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-full h-full"
