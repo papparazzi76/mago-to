@@ -78,8 +78,8 @@ const ContactSection = () => {
               <span className="text-foreground">Juntos</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              ¿Listo para crear momentos inolvidables? Cuéntame sobre tu evento 
-              y diseñaremos juntos la experiencia perfecta.
+              ¿Buscas un mago en Valladolid para tu próximo evento? Cuéntame sobre tu fiesta 
+              y diseñaremos juntos la experiencia de magia perfecta.
             </p>
           </div>
 

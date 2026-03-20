@@ -21,11 +21,11 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="text-magic">"El Mago Toño"</span>
               <br />
-              <span className="text-foreground">Tu Mago Favorito en Valladolid</span>
+              <span className="text-foreground">Tu Mago de Confianza en Valladolid</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Más de 25 años creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
-              que combina técnica, humor y cercanía para hacer de cada evento una experiencia memorable.
+              Más de 25 años como mago profesional en Valladolid, creando momentos mágicos únicos. Especialista en magia de cerca y magia de salón 
+              que combina técnica, humor y cercanía para hacer de cada evento en Valladolid y Castilla y León una experiencia memorable.
             </p>
           </div>
 

@@ -19,12 +19,12 @@ const Footer = () => {
                 <span className="text-xl font-bold text-magic">El Mago Toño</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Creando momentos mágicos e inolvidables desde Valladolid. 
-                Magia de cerca que conecta corazones y despierta sonrisas.
+                Mago profesional en Valladolid con más de 25 años de experiencia. 
+                Espectáculos de magia de cerca y humor para fiestas, bodas, comuniones y eventos en Valladolid y Castilla y León.
               </p>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Heart className="w-4 h-4 text-red-500" />
-                <span>Más de 15 años creando magia</span>
+                <span>Más de 25 años creando magia en Valladolid</span>
               </div>
             </div>
 
