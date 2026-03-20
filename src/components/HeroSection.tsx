@@ -126,8 +126,8 @@ const HeroSection = () => {
               <span className="text-lg text-secondary font-medium">¡Prepárate para la magia!</span>
             </div>
 
-            {/* Main headline */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            {/* Main headline - hidden on mobile (shown overlaid on image) */}
+            <h1 className="hidden lg:block text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-primary">El Mago Toño</span>
               <br />
               <span className="text-foreground">Magia y</span>
