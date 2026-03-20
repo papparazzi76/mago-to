@@ -1,5 +1,7 @@
+import { useState } from "react"
 import { Card } from "./ui/card"
 import { MagicButton } from "./ui/magic-button"
+import { Dialog, DialogContent } from "./ui/dialog"
 import { 
   Users, 
   Heart, 
