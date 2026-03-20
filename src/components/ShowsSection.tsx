@@ -18,6 +18,7 @@ import {
 const ShowsSection = () => {
   const [videoOpen, setVideoOpen] = useState(false)
   const [videoOpen2, setVideoOpen2] = useState(false)
+  const [videoOpen3, setVideoOpen3] = useState(false)
 
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
@@ -140,6 +141,25 @@ const ShowsSection = () => {
                 Ver vídeo de espectáculo
               </span>
             </button>
+
+            <button
+              onClick={() => setVideoOpen3(true)}
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 active:scale-[0.98]"
+            >
+              <img
+                src="https://img.youtube.com/vi/kH9bD4c6yik/hqdefault.jpg"
+                alt="Ver vídeo de espectáculo 3"
+                className="w-full max-w-md aspect-video object-cover"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <span className="absolute bottom-3 left-0 right-0 text-center text-white font-semibold text-sm drop-shadow-lg">
+                Ver vídeo de espectáculo
+              </span>
+            </button>
           </div>
 
           {/* Video dialogs */}
@@ -150,6 +170,22 @@ const ShowsSection = () => {
                   <iframe
                     src="https://www.youtube.com/embed/37r_FwzLIgY?autoplay=1"
                     title="Espectáculo El Mago Toño"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                )}
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog open={videoOpen3} onOpenChange={setVideoOpen3}>
+            <DialogContent className="max-w-4xl p-0 bg-black border-none overflow-hidden">
+              <div className="aspect-video w-full">
+                {videoOpen3 && (
+                  <iframe
+                    src="https://www.youtube.com/embed/kH9bD4c6yik?autoplay=1"
+                    title="Espectáculo El Mago Toño 3"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-full h-full"
